@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">FriendCircle</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+	<string name="welcomeToFriendCircle">Welcome to Friend Circle</string>
+    <string name="signUpForFriendCircle">Sign up for Friend Circle</string>
+    <string name="signIn">Sign in</string>
+    <string name="successfulRegistration">Successful registration</string>
+    <!-- <string name=""></string>
+    <string name=""></string>
+    <string name=""></string>
+    <string name=""></string> -->
+    
+	
+    
+</resources>

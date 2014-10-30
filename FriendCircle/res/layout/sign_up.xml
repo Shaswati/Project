@@ -1,0 +1,102 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/signUpRelativeLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <EditText
+        android:id="@+id/firstNameEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="14dp"
+        android:ems="10"
+        android:hint="First name"
+        android:inputType="textPersonName" >
+
+        <requestFocus />
+    </EditText>
+    
+    <EditText
+        android:id="@+id/lastNameEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/firstNameEditText"
+        android:layout_below="@+id/firstNameEditText"
+        android:layout_marginTop="14dp"
+        android:ems="10"
+        android:hint="Last name"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/emailEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lastNameEditText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="14dp"
+        android:ems="10"
+        android:hint="Email address"
+        android:inputType="textEmailAddress" />
+
+    <EditText
+        android:id="@+id/passwordEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/emailEditText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="14dp"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPassword" />
+    
+    <RadioGroup 
+        android:id="@+id/radioGroup1"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_alignLeft="@+id/firstNameEditText"
+        android:layout_alignRight="@+id/firstNameEditText"
+        android:layout_below="@+id/passwordEditText"
+        android:layout_marginTop="14dp"
+        android:orientation="horizontal" >
+        
+    	<RadioButton 
+    	    android:id="@+id/maleRadioButton"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="Male"
+	        android:onClick="onRadioButtonClicked"
+	        android:checked="true"/>
+	    <RadioButton 
+	        android:id="@+id/femaleRadioButton"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="Female"
+	        android:onClick="onRadioButtonClicked"/>
+	</RadioGroup>
+    
+    <Button
+        android:id="@+id/birthdayButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/radioGroup1"
+        android:layout_alignRight="@+id/radioGroup1"
+        android:layout_below="@+id/radioGroup1"
+        android:layout_marginTop="14dp"
+        android:text="Select Birthday"
+        android:onClick="setDate" />
+
+    <Button
+        android:id="@+id/createAccountButton1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/radioGroup1"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/passwordEditText"
+        android:layout_marginBottom="58dp"
+        android:text="Create account"
+        />
+        <!-- android:onClick="functionCreateAccount" --> 
+          
+    
+</RelativeLayout>
